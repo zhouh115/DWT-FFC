@@ -1,9 +1,6 @@
-# Copyright (c) Meta Platforms, Inc. and affiliates.
-
-# All rights reserved.
-
-# This source code is licensed under the license found in the
-# LICENSE file in the root directory of this source tree.
+# A ConvNet for the 2020s 
+# original implementation  https://github.com/facebookresearch/ConvNeXt/blob/main/models/convnext.py
+# paper https://arxiv.org/pdf/2201.03545.pdf
 
 
 import torch
