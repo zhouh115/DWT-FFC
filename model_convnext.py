@@ -83,12 +83,12 @@ class ConvNeXt0(nn.Module):
 
 
 def dwt_init(x):
-    x01 = x[:, :, 0::2, :] / 2   #x01.shape=[4,3,128,256]   从0开始，每隔两个取出，#像素值还要除以2    0,2,4,6...254-->0,1,2,...127
-    x02 = x[:, :, 1::2, :] / 2   #x02.shape=[4,3,128,256]   从1开始，每隔两个取出，#像素值还要除以2    1,3,5,7...255-->0,1,2,...127 
-    x1 = x01[:, :, :, 0::2]    #x1.shape=[4,3,128,128]   从0取出      0,2,4,6...254-->0,1,2,...127
-    x2 = x02[:, :, :, 0::2]       #x2.shape=[4,3,128,128]   从0取出
-    x3 = x01[:, :, :, 1::2]     #x3.shape=[4,3,128,128]   从1取出     1,3,5,7...255-->0,1,2,...127 
-    x4 = x02[:, :, :, 1::2]  #x4.shape=[4,3,128,128]   从1取出
+    x01 = x[:, :, 0::2, :] / 2   #x01.shape=[4,3,128,256]   
+    x02 = x[:, :, 1::2, :] / 2   #x02.shape=[4,3,128,256]    
+    x1 = x01[:, :, :, 0::2]    #x1.shape=[4,3,128,128]  
+    x2 = x02[:, :, :, 0::2]       #x2.shape=[4,3,128,128]  
+    x3 = x01[:, :, :, 1::2]     #x3.shape=[4,3,128,128]  
+    x4 = x02[:, :, :, 1::2]  #x4.shape=[4,3,128,128]  
     x_LL = x1 + x2 + x3 + x4
     x_HL = -x1 - x2 + x3 + x4
     x_LH = -x1 + x2 - x3 + x4
@@ -151,7 +151,7 @@ class dwt_ffc_UNet2(nn.Module):
         layer5 = blockUNet(nf*8, nf*8-16, name, transposed=False, bn=True, relu=False, dropout=False)
         layer_idx += 1
         name = 'layer%d' % layer_idx
-        layer6 = blockUNet(nf*4, nf*4, name, transposed=False, bn=False, relu=False, dropout=False)#有改动
+        layer6 = blockUNet(nf*4, nf*4, name, transposed=False, bn=False, relu=False, dropout=False)
 
         layer_idx -= 1
         name = 'dlayer%d' % layer_idx
@@ -228,13 +228,7 @@ class dwt_ffc_UNet2(nn.Module):
 
         dout3 = self.dlayer6(out3_ffc)
 
-        # Tout6_out5 = torch.cat([dout6, out5, dwt_high_4], 1)
-
-
-        # Tout5 = self.dlayer5(Tout6_out5)
-        # Tout5_out4 = torch.cat([Tout5, out4,dwt_high_3], 1)
-        # Tout4 = self.dlayer4(Tout5_out4)
-        # Tout4_out3 = torch.cat([Tout4, out3,dwt_high_2], 1)        # Tout3 = self.dlayer3(Tout4_out3)
+      
         Tout3_out2 = torch.cat([dout3, out2,dwt_high_1], 1)
         Tout2 = self.dlayer2(Tout3_out2)
         Tout2_out1 = torch.cat([Tout2, out1,dwt_high_0], 1)
