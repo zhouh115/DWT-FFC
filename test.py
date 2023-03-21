@@ -7,11 +7,6 @@ import os
 import time
 import re
 from torchvision import transforms
-from utils_test import to_psnr, to_ssim_skimage    #少一个to_rmse
-from tensorboardX import SummaryWriter
-
-from pytorch_msssim import msssim
-from perceptual import LossNetwork
 
 from test_dataset_for_testing import dehaze_test_dataset
 from model_convnext import fusion_net
