@@ -23,4 +23,9 @@ timm=0.6.12
 # Pretrained Model
 Download [the pretrained ConvNext model](https://dl.fbaipublicfiles.com/convnext/convnext_xlarge_22k_1k_384_ema.pth) and place it into the folder ./weights. 
 
+# Our saved Model
+Download [our saved model for NTIRE 2023 HR Nonhomogeneous Test set](https://drive.google.com/file/d/1HfaVBTkBSU8sScFW30cv9XiOuXAmaByW/view?usp=sharing) and place it into the folder ./weights to reproduce our test result.
+
+Download [our saved model for NTIRE 2023 HR Nonhomogeneous Validation set](https://drive.google.com/file/d/1Sd7QBUYv6xoNwYKncG5HWoSxtb99p6ev/view?usp=sharing) and place it into the folder ./weights to reproduce our validation result.
+
 
