@@ -35,7 +35,7 @@ MyEnsembleNet= fusion_net()
 
 MyEnsembleNet = MyEnsembleNet.to(device)
 
-MyEnsembleNet.load_state_dict(torch.load(os.path.join('./weights/', test_best.pkl)))
+MyEnsembleNet.load_state_dict(torch.load(os.path.join('./weights/', 'test_best.pkl')))
 
 # --- Test --- #
 with torch.no_grad():
