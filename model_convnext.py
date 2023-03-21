@@ -8,6 +8,9 @@ from timm.models.registry import register_model
 from myFFCResblock0 import myFFCResblock
 
 
+# A ConvNet for the 2020s 
+# original implementation  https://github.com/facebookresearch/ConvNeXt/blob/main/models/convnext.py
+# paper https://arxiv.org/pdf/2201.03545.pdf
 
 class ConvNeXt0(nn.Module):
     r""" ConvNeXt
@@ -130,6 +133,9 @@ def blockUNet(in_c, out_c, name, transposed=False, bn=False, relu=True, dropout=
         block.add_module('%s_dropout' % name, nn.Dropout2d(0.5, inplace=True))
     return block
 
+# DW-GAN: A Discrete Wavelet Transform GAN for NonHomogeneous Dehazing 2021 
+# original implementation  https://github.com/liuh127/NTIRE-2021-Dehazing-DWGAN/blob/main/model.py
+# paper https://openaccess.thecvf.com/content/CVPR2021W/NTIRE/papers/Fu_DW-GAN_A_Discrete_Wavelet_Transform_GAN_for_NonHomogeneous_Dehazing_CVPRW_2021_paper.pdf
 class dwt_ffc_UNet2(nn.Module):
     def __init__(self,output_nc=3, nf=16):
         super(dwt_ffc_UNet2, self).__init__()
