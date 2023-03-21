@@ -1,5 +1,5 @@
 # DWT-FFC
-This is the code for our method submmitted to NTIRE 2023 HR NonHomogeneous Dehazing Challenge
+This is the code for our DWT-FFC method submmitted to NTIRE 2023 HR NonHomogeneous Dehazing Challenge
 
 # Environment:
 
