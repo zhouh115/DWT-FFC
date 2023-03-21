@@ -48,7 +48,7 @@ def predict(gridnet, test_data_loader):
 
 
         # --- Calculate the average PSNR --- #
-        a, b = to_psnr(frame_out, gt)   ###我改的
+        a, b = to_psnr(frame_out, gt)  
         psnr_list.extend(a)
     avr_psnr = sum(psnr_list) / len(psnr_list)
     return avr_psnr
