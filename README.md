@@ -34,3 +34,22 @@ Download above pretrained and saved models
 Prepare NTIRE2023 HR Nongomogeneous Dehazing Chanllenge Validation set and Test set
 
 Run test.py and find results in the folder ./test_result. Please check the test hazy image path (test.py line 12).
+
+
+# Technical Details
+
+Framework：Pytorch 
+
+Optimizer: AdamW
+
+Learning rate: initial learning rate=0.0001
+
+GPU: RTX2080Ti
+
+Datasets used for training: NTIRE2023 HR Nonhomogeneous Dehazing Chanllenge Train data, NH-HAZE dataset and NH-HAZE2 dataset
+
+Training time: 72h(5000 epoch)
+
+training strategies: auto augmentation
+
+efificiency optimization strategies: multistage learning rate strategy
