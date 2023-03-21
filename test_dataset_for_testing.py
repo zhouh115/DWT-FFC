@@ -13,9 +13,9 @@ class dehaze_test_dataset(Dataset):
         self.file_len = len(self.list_test)
     def __getitem__(self, index, is_train=True):
         hazy = Image.open(self.root_hazy + self.list_test[index]).convert('RGB')
-        print(hazy)
+        #print(hazy)
         hazy = self.transform(hazy)
-        print(hazy.shape)
+        #print(hazy.shape)
         if hazy.shape[1]<hazy.shape[2]:
             hazy_up_left=hazy[:,0:1600, 0:2432]
             hazy_up_middle=hazy[:, 0:1600, 1800:4232]
