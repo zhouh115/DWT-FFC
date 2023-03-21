@@ -48,7 +48,7 @@ GPU: RTX2080Ti
 
 Datasets used for training: NTIRE2023 HR Nonhomogeneous Dehazing Chanllenge Train data, NH-HAZE dataset and NH-HAZE2 dataset
 
-Training time: 72h(5000 epoch)
+Training time: 72h (5000 epoch)
 
 training strategies: auto augmentation
 
