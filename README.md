@@ -57,3 +57,19 @@ Training time: 72h (5000 epoch)
 training strategies: auto augmentation
 
 efificiency optimization strategies: multistage learning rate strategy
+
+
+# Acknowledgement
+We thank the authors of [DW-GAN](https://github.com/liuh127/NTIRE-2021-Dehazing-DWGAN), [LaMa](https://advimman.github.io/lama-project/), and [ConvNeXt](https://github.com/facebookresearch/ConvNeXt). Part of our code is built on their models.
+
+# Citation
+If you find this repository helps, please consider citing:
+@InProceedings{Zhou_2023CVPR,
+    author    = {Zhou, Han and Dong, Wei and Liu, Yangyi and Chen, Jun},
+    title     = {Breaking Through the Haze: An Advanced Non-Homogeneous Dehazing Method based on Fast Fourier Convolution and ConvNeXt},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {June},
+    year      = {2023},
+    pages     = {1894-1903}
+}
+
