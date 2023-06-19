@@ -64,12 +64,18 @@ We thank the authors of [DW-GAN](https://github.com/liuh127/NTIRE-2021-Dehazing-
 
 # Citation
 If you find this repository helps, please consider citing:
-@InProceedings{Zhou_2023CVPR,
-    author    = {Zhou, Han and Dong, Wei and Liu, Yangyi and Chen, Jun},
-    title     = {Breaking Through the Haze: An Advanced Non-Homogeneous Dehazing Method based on Fast Fourier Convolution and ConvNeXt},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
-    month     = {June},
-    year      = {2023},
-    pages     = {1894-1903}
-}
+
+    
+    @InProceedings{Zhou_2023_CVPR,
+        author    = {Zhou, Han and Dong, Wei and Liu, Yangyi and Chen, Jun},   
+        title     = {Breaking Through the Haze: An Advanced Non-Homogeneous Dehazing Method based on Fast Fourier Convolution and ConvNeXt},  
+        booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},  
+        month     = {June},  
+        year      = {2023},  
+        pages     = {1894-1903}  
+    }
+
+
+
+
 
