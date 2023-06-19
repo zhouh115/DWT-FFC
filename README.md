@@ -1,5 +1,8 @@
-# DWT-FFC
-This is the code for our DWT-FFC method submmitted to NTIRE 2023 HR NonHomogeneous Dehazing Challenge
+# Breaking Through the Haze: An Advanced Non-Homogeneous Dehazing Method based on Fast Fourier Convolution and ConvNeXt 
+This is the official PyTorch implementation of dehazing method based on the FFC and ConvNeXt.
+Winner award(1st place solution) of NTIRE 2023 HR NonHomogeneous Dehazing Challenge (CVPR Workshop 2023).
+
+See more details in [[Chanllenge Report](https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/papers/Ancuti_NTIRE_2023_HR_NonHomogeneous_Dehazing_Challenge_Report_CVPRW_2023_paper.pdf)], [[Paper](https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/papers/Zhou_Breaking_Through_the_Haze_An_Advanced_Non-Homogeneous_Dehazing_Method_Based_CVPRW_2023_paper.pdf)].
 
 # Environment:
 
