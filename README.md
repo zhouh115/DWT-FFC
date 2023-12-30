@@ -60,9 +60,11 @@ training strategies: auto augmentation
 efificiency optimization strategies: multistage learning rate strategy
 
 # More Information about our model and paper
-Datasets can be found:
+Datasets can be found below:
 
-[Reside](https://sites.google.com/view/reside-dehaze-datasets/reside-standard?authuser=3D0)
+[Reside](https://sites.google.com/view/reside-dehaze-datasets/reside-standard?authuser=3D0), [NH-HAZE](https://data.vision.ee.ethz.ch/cvl/ntire20/nh-haze/), [NH-HAZE2](https://drive.google.com/drive/folders/1YLYgUm7ttjdqfvuFiYCm-33Xe3J3Jnir?usp=sharing), [HD-NH-HAZE](https://drive.google.com/drive/folders/1_8zZ6-MEMubZb2NC-6UPKezqQDPWt2vL?usp=sharing), and our [Combined Dataset](https://drive.google.com/drive/folders/1cBzxP51d56Y9W1BlGbEdePUYZmRVTqBS?usp=sharing).
+
+
 
 # Acknowledgement
 We thank the authors of [DW-GAN](https://github.com/liuh127/NTIRE-2021-Dehazing-DWGAN), [LaMa](https://advimman.github.io/lama-project/), and [ConvNeXt](https://github.com/facebookresearch/ConvNeXt). Part of our code is built on their models.
