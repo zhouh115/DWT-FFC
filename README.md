@@ -41,7 +41,7 @@ Prepare NTIRE2023 HR Nongomogeneous Dehazing Chanllenge Validation set and Test 
 Run test.py and find results in the folder ./test_result. Please check the test hazy image path (test.py line 12).
 
 
-# Technical Details
+# Technical Details for NTIRE 23 Non-homogeneous Dehazing Challenge
 
 Framework：Pytorch 
 
@@ -59,6 +59,10 @@ training strategies: auto augmentation
 
 efificiency optimization strategies: multistage learning rate strategy
 
+# More Information about our model and paper
+Datasets can be found:
+
+[Reside](https://sites.google.com/view/reside-dehaze-datasets/reside-standard?authuser=3D0)
 
 # Acknowledgement
 We thank the authors of [DW-GAN](https://github.com/liuh127/NTIRE-2021-Dehazing-DWGAN), [LaMa](https://advimman.github.io/lama-project/), and [ConvNeXt](https://github.com/facebookresearch/ConvNeXt). Part of our code is built on their models.
@@ -70,7 +74,7 @@ If you find this repository helps, please consider citing:
     @InProceedings{Zhou_2023_CVPRW,
         author    = {Zhou, Han and Dong, Wei and Liu, Yangyi and Chen, Jun},   
         title     = {Breaking Through the Haze: An Advanced Non-Homogeneous Dehazing Method based on Fast Fourier Convolution and ConvNeXt},  
-        booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},  
+        booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},  
         month     = {June},  
         year      = {2023},  
         pages     = {1894-1903}  
