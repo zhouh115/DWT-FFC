@@ -31,6 +31,7 @@ Download [the pretrained ConvNext model](https://dl.fbaipublicfiles.com/convnext
 Download [our saved model for NTIRE 2023 HR Nonhomogeneous Test set](https://drive.google.com/file/d/1HfaVBTkBSU8sScFW30cv9XiOuXAmaByW/view?usp=sharing) and place it into the folder ./weights to reproduce our test result.
 
 Download [our saved model for NTIRE 2023 HR Nonhomogeneous Validation set](https://drive.google.com/file/d/1Sd7QBUYv6xoNwYKncG5HWoSxtb99p6ev/view?usp=sharing) and place it into the folder ./weights to reproduce our validation result.
+
 These weights are the checkpoints that perform best for NTIRE 23 dehazing challenge ofiicial validation set and test set.
 # How to reproduce our result or recover your hazy image
 Download above pretrained and saved models
