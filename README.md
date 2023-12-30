@@ -64,6 +64,10 @@ Datasets can be found below:
 
 [Reside](https://sites.google.com/view/reside-dehaze-datasets/reside-standard?authuser=3D0), [NH-HAZE](https://data.vision.ee.ethz.ch/cvl/ntire20/nh-haze/), [NH-HAZE2](https://drive.google.com/drive/folders/1YLYgUm7ttjdqfvuFiYCm-33Xe3J3Jnir?usp=sharing), [HD-NH-HAZE](https://drive.google.com/drive/folders/1_8zZ6-MEMubZb2NC-6UPKezqQDPWt2vL?usp=sharing), and our [Combined Dataset](https://drive.google.com/drive/folders/1cBzxP51d56Y9W1BlGbEdePUYZmRVTqBS?usp=sharing).
 
+If you want to train with your data, you can use the train.py in [DW-GAN](https://github.com/liuh127/NTIRE-2021-Dehazing-DWGAN), as we adopt similar training stratety with DWGAN.
+
+We are sorry that we didn't name our model in our paper, but we are glad you can use DWT-FFC to represent our method if you want to compare with our model.
+
 
 
 # Acknowledgement
