@@ -163,7 +163,7 @@ with torch.no_grad():
         #   print(frame_out_rgba.shape)
         
         name= re.findall("\d+",str(name))
-        imwrite(frame_out, output_dir + '/' + str(i) + str(name[0])+'.png', range=(0, 1))
+        imwrite(frame_out, output_dir + '/' + str(name[0])+'.png', range=(0, 1))
       
         a, b =to_psnr(frame_out, clean)
         psnr_list.extend(a)
