@@ -17,7 +17,7 @@ from perceptual import LossNetwork
 from tqdm import tqdm
 
 # --- Parse hyper-parameters train --- #
-parser = argparse.ArgumentParser(description='DW-GAN Dehaze')
+parser = argparse.ArgumentParser(description='DWT-FFC')
 parser.add_argument('-learning_rate', help='Set the learning rate', default=1e-4, type=float)
 parser.add_argument('-train_batch_size', help='Set the training batch size', default=2, type=int)
 parser.add_argument('-train_epoch', help='Set the training epoch', default=10000, type=int)
@@ -142,6 +142,7 @@ for epoch in range(train_epoch+1):
         }, iteration)
     if epoch % 100 == 0:
         torch.save(MyEnsembleNet.state_dict(), os.path.join(args.model_save_dir, 'epoch' + str(epoch) + '.pkl'))
+
 
 
 
